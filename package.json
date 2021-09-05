@@ -1,0 +1,26 @@
+{
+  "name": "custom-webpack-config",
+  "version": "1.0.0",
+  "description": "custom webpack config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksandrMihasenko/custom-webpack-config.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Mihasenko A.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleksandrMihasenko/custom-webpack-config/issues"
+  },
+  "homepage": "https://github.com/AleksandrMihasenko/custom-webpack-config#readme",
+  "devDependencies": {
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  }
+}
