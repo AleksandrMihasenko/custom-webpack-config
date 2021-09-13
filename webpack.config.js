@@ -13,6 +13,14 @@ module.exports = {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist')
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      }
+    ]
+  },
   plugins: [
     new htmlWebpackPlugin({
       template: './index.html'
