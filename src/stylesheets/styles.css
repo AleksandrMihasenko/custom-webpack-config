@@ -1,0 +1,10 @@
+.container {
+    padding-top: 100px;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+}
+
+h1 {
+    text-align: center;
+}

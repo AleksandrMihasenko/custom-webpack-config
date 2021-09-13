@@ -1,4 +1,4 @@
-import User from './User';
+import User from './js/User';
 
 const user = new User('admin');
 
