@@ -1,6 +1,7 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const miniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -23,7 +24,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: [miniCssExtractPlugin.loader, 'css-loader']
       },
       {
         test: /\ttf|woff|woff2|eot/,
@@ -37,6 +38,9 @@ module.exports = {
     }),
     new CleanWebpackPlugin({
       cleanAfterEveryBuildPatterns: ['dist']
-  })
+    }),
+    new miniCssExtractPlugin({
+      filename: '[name].[contenthash].css'
+    })
   ]
 }
