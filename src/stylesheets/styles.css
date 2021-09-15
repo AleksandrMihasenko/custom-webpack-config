@@ -8,3 +8,10 @@ body {
     margin: 0 auto;
     text-align: center;
 }
+
+.image {
+    width: 100%;
+    height: 300px;
+    background: url("../assets/webpack-logo.svg") no-repeat 50%;
+    background-size: contain;
+}
