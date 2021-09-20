@@ -24,11 +24,26 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: [miniCssExtractPlugin.loader, 'css-loader']
+        use: [
+          {
+            loader: miniCssExtractPlugin.loader
+          },
+          'css-loader'
+        ]
       },
       {
         test: /\ttf|woff|woff2|eot/,
         use: ['file-loader']
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          {
+            loader: miniCssExtractPlugin.loader
+          },
+          'css-loader',
+          'sass-loader',
+        ],
       }
     ]
   },

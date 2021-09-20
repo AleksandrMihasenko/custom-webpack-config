@@ -1,5 +1,6 @@
-import User from '@/js/User';
-import '@/stylesheets/styles';
+import User from '@/js/User.js';
+import '@/stylesheets/styles.css';
+import '@/stylesheets/app.sass';
 
 const user = new User('admin');
 
