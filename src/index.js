@@ -1,4 +1,5 @@
 import User from '@/js/User.js';
+import '@/js/babel.js';
 import '@/stylesheets/styles.css';
 import '@/stylesheets/app.sass';
 
